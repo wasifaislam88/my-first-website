@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Story Rating Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .form-container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid white;
+      border-radius: 5px;
+      background-color: white;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input[type="text"], input[type="email"], select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid white;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color:green;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <form action="#" method="POST">
+      <!-- Name Field -->
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      
+      <!-- Email Field -->
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <!-- Rating Field -->
+      <label for="story-rating">Rate the story:</label>
+      <select id="story-rating" name="rating" required>
+        <option value="" disabled selected>Please choose</option>
+        <option value="excellent">Excellent</option>
+        <option value="very-good">Very Good</option>
+        <option value="good">Good</option>
+        <option value="average">Average</option>
+        <option value="poor">Poor</option>
+      </select>
+
+      <!-- Submit Button -->
+      <button type="submit">Submit Rating</button>
+    </form>
+  </div>
+
+</body>
+</html>
