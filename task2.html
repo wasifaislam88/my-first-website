@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Story Rating</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .rating-container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid wheat;
+      border-radius: 5px;
+      background-color: white;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid wheat;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: green;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="rating-container">
+    <label for="story-rating">Rate the story:</label>
+    <select id="story-rating" name="rating">
+      <option value="" disabled selected>Please choose</option>
+      <option value="excellent">Excellent</option>
+      <option value="very-good">Very Good</option>
+      <option value="good">Good</option>
+      <option value="average">Average</option>
+      <option value="poor">Poor</option>
+    </select>
+
+    <button type="submit">Submit Rating</button>
+  </div>
+
+</body>
+</html>
